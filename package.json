@@ -7,7 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "static": "next build && next export"
+    "static": "next build && next export",
+    "open:android": "cap open android",
+    "sync:android": "cap sync android",
+    "run:android": "yarn static && yarn sync:android && cap run android",
+    "open:ios": "cap open ios",
+    "sync:ios": "cap sync ios",
+    "run:ios": "yarn static && yarn sync:ios && cap run ios"
   },
   "dependencies": {
     "@capacitor/android": "^4.6.3",
