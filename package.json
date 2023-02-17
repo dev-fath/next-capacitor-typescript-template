@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "static": "next build && next export",
+    "copy": "cap copy",
     "open:android": "cap open android",
     "sync:android": "cap sync android",
     "run:android": "yarn static && yarn sync:android && cap run android",
